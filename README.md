@@ -17,6 +17,15 @@ If you want to emphasise text, you can use the `\emph{}` command, which will emp
 - `\textsl{}` sets text in the `slated shape`
 - `\textmd{}` sets text in the `normal weight and width`
 
+
+### Paragraph Alignment
+
+| Alignment         | Environment        | Command           |
+| :---------------- | :----------------: | ----------------: |
+| Left justified    | flushleft          | \raggedright      |
+| Right justified   | flushright         | \raggedleft       |
+| Center            | center             | \centering        |
+
 ### Formatting documents and text
 #### Sections
 LaTeX can organize documents into chapters and sections. Levels of depth are:
