@@ -21,7 +21,7 @@ If you want to emphasise text, you can use the `\emph{}` command, which will emp
 ### Paragraph Alignment
 
 | Alignment         | Environment        | Command           |
-| :---------------- | :----------------: | ----------------: |
+| :---------------- | :----------------: | :---------------- |
 | Left justified    | flushleft          | \raggedright      |
 | Right justified   | flushright         | \raggedleft       |
 | Center            | center             | \centering        |
