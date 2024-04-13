@@ -6,7 +6,30 @@ A basic TeX distribution doesn't actually provide much functionality. In most ca
 
 Packages required by a document are called in the __preamble__ of your LaTeX document, i.e. before the `\begin{document}` statement. The syntax to do so is `\usepackage[options]{package_name}`, with the name of the package included in the brackets.
 
-### Comands and Environments
+### Understanding LaTeX Commands
+LaTeX commands begin with a backslash, followed by big or small letters, and are usually named in a descriptive way.
+
+Commands can have __parameters__, that is, options that determine in which way the command does its work. The values that we hand over as parameters are called __arguments__. They are given in curly braces or square brackets, as we will explain now.
+
+So, calling a command can look like this:
+
+```tex
+\command[options]{argument}
+```
+
+> [!NOTE]
+> __Commands, macros, and declarations__
+> Most LaTex commands, including those we define ourselves, consist of other commands. That's why LaTeX commands are also called __macros__, and the terms _macro_ and _command_ are used interchangeably. A command or macro the doesn't print something but just changes current settings, such as the font shape or text alignment, is also called a __declaration__.
+
+### Understanding LaTeX Environments
+LaTeX environments start with `\begin` and end with `\end`. Both commands require the name of the environment as their argument.
+
+General environment structure is as following:
+```tex
+\begin{name}[options]{argument}
+  ...
+\end{name}
+```
 
 
 ### The preamble of a document
