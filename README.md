@@ -31,8 +31,6 @@ General environment structure is as following:
   ...
 \end{name}
 ```
-
-
 ### The preamble of a document
 The preamble in a LaTeX document is the space between the `\documentclass` and `\begin{document}` commands where you define the document class, include packages, specify properties, set page layout, and define custom commands. For example:
 
@@ -58,6 +56,32 @@ The body of the document should be placed between the `\begin{document}` and `\e
 \begin{document}
 This is my first document in LaTeX.
 \end{document}
+```
+### Top Matter
+
+The LaTeX engine defines the document and author information as Top Matter. Although there does not exist any command as such `\topmatter`, the top matter includes document information like title, date, and author information like name, email, etc.
+A standard article will begin with a document title, followed by author names and addresses. The code to obtain these are:
+```tex
+\begin{document}
+\title{Title of the document}
+\author{Donald Knuth and Leslie Lamport \cr
+{Address of Authors}
+\date{\today}
+\maketitle
+\end{document}
+```
+Here, `\cr` is used for breaking the line after the names in `\author`. The document date can be simply changed by writing the date in it, for example, `\date{30 August 2021}`, or the date can be ignored by leaving its content empty, i.e., \date{}.
+
+### Abstract and Keywords
+While writing research papers it is mandatory to include the abstract and the keywords before the main section of the body. The LaTeX engine bears pre-defined commands that inform it what part of content makes up the abstract and keywords respectively. The command to include abstract and keywords in the document exist for document class like article and report, however, not available for book class of document.
+
+Immediately after the Title part, the Abstract and Keywords can be added as follows:
+
+```tex
+\begin{abstract}
+  Abstract text goes here ... a
+  Keywords: keyword; keyword; keyword
+\end{abstract}
 ```
 
 ### Text Effects
@@ -173,7 +197,7 @@ To define the hierarchical structure of the document LaTeX provides special comm
 >[!WARNING]
 > The first option of commands, which is placed within square brackets `[]`, is optional and can be utilized to change the name of the section that will be displayed in the Table of Contents, if necessary.
 
-LaTeX will automatically number the chapters, parts, sections, etc. If you do not want the section to be numbered use an asterisk `(*)` symbol:
+LaTeX will automatically number the chapters, parts, sections, etc. You can use `(*)` symbol sign after the section commands if you don’t want certain sections to be numbered. Additionally, using the `(*)` sign after the section commands will not reflect that particular section in the table of contents, too.
 
 ```tex
 \section*{My First Section Title}
@@ -182,3 +206,4 @@ LaTeX will automatically number the chapters, parts, sections, etc. If you do no
 
 ### References
 - [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
+- [Learn LaTeX — A Beginner's Step-By-Step Guide](https://typeset.io/resources/learn-latex-beginners-step-by-step-guide/)
