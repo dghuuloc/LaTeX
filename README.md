@@ -1,4 +1,5 @@
-# LateX
+# <p align="center">LaTeX Beginner's Guide</p>
+---
 
 ### Text Effects
 If you want to emphasise text, you can use the `\emph{}` command, which will emphasise the text in between the curly brackets, usually by putting it in italics. You can also specify this and other effects more directly:
