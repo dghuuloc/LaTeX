@@ -146,16 +146,39 @@ LaTeX will happily allow you to insert a list environment into an existing one (
 ```
 
 
-### Formatting documents and text
-#### Sections
-LaTeX can organize documents into chapters and sections. Levels of depth are:
+### Structure of the document
+To define the hierarchical structure of the document LaTeX provides special commands that defines chapter, section, etc.
 
 ```tex
-\part{}
-\chapter{}
-\section{}
-\subsection{}
-\subsubsection{}
-\paragraph{}
-\subparagraph{}
+\part[part short title]{part title}
 ```
+```tex
+\chapter[chapter short title]{chapter title}
+```
+```tex
+\section[section short title]{section title}
+```
+```tex
+\subsection[subsection short title]{subsection title}
+```
+```tex
+\subsubsection[subsubsection short title]{subsubsection title}
+```
+```tex
+\paragraph[paragraph short title]{paragraph title}
+```
+```tex
+\subparagraph[subparagraph short title]{subparagraph title}
+```
+>[!WARNING]
+> The first option of commands, which is placed within square brackets `[]`, is optional and can be utilized to change the name of the section that will be displayed in the Table of Contents, if necessary.
+
+LaTeX will automatically number the chapters, parts, sections, etc. If you do not want the section to be numbered use an asterisk `(*)` symbol:
+
+```tex
+\section*{My First Section Title}
+\subsection*{My First Subsection Title}
+```
+
+### References
+- [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
