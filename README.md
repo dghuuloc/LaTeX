@@ -6,6 +6,36 @@ A basic TeX distribution doesn't actually provide much functionality. In most ca
 
 Packages required by a document are called in the __preamble__ of your LaTeX document, i.e. before the `\begin{document}` statement. The syntax to do so is `\usepackage[options]{package_name}`, with the name of the package included in the brackets.
 
+### Comands and Environments
+
+
+### The preamble of a document
+The preamble in a LaTeX document is the space between the `\documentclass` and `\begin{document}` commands where you define the document class, include packages, specify properties, set page layout, and define custom commands. For example:
+
+```tex
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\newcommand{\mycommand}[1]{\textcolor{red}{#1}}
+```
+
+> [!NOTE]
+> In this section of the text file you will tell LaTeX about all the tools that you need to use:
+> - Packages
+> - Commands
+> - Files
+
+
+### The main body of the document
+The body of the document should be placed between the `\begin{document}` and `\end{document}` commands, anything after the `\end{document}` command will be ignored.
+
+```tex
+\documentclass[a4paper,12pt]{book}
+\begin{document}
+This is my first document in LaTeX.
+\end{document}
+```
+
 ### Text Effects
 If you want to emphasise text, you can use the `\emph{}` command, which will emphasise the text in between the curly brackets, usually by putting it in italics. You can also specify this and other effects more directly:
 
