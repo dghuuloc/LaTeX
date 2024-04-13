@@ -19,6 +19,7 @@ So, calling a command can look like this:
 
 > [!NOTE]
 > __Commands, macros, and declarations__
+> 
 > Most LaTex commands, including those we define ourselves, consist of other commands. That's why LaTeX commands are also called __macros__, and the terms _macro_ and _command_ are used interchangeably. A command or macro the doesn't print something but just changes current settings, such as the font shape or text alignment, is also called a __declaration__.
 
 ### Understanding LaTeX Environments
