@@ -72,6 +72,62 @@ A standard article will begin with a document title, followed by author names an
 ```
 Here, `\cr` is used for breaking the line after the names in `\author`. The document date can be simply changed by writing the date in it, for example, `\date{30 August 2021}`, or the date can be ignored by leaving its content empty, i.e., \date{}.
 
+### Single line or multi-line comments in LaTeX
+#### Sinngle line comment in LaTeX
+In case of single-line comment, you need to use percent symbol `(%)`.
+```tex
+% This is a multiline comment in LaTeX
+% You can use the % symbol at the beginning of each line
+\documentclass{article}
+\begin{document}
+\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium nibh turpis. Donec nec magna neque. Pellentesque metus urna, volutpat at risus et, euismod hendrerit ex. Vestibulum semper quis metus in pretium.
+
+% The following lines are commented out
+% This is line 1 of the comment
+% This is line 2 of the comment
+% This is line 3 of the comment
+
+\end{document}
+```
+#### Multi-line comments in LaTeX
+
+___Using `iffalse` and `fi` commands___
+
+`\iffalse` and `\fi` commands can be used to create a block comment. Anything between `\iffalse` and `\fi` will be ignored by the compiler.
+
+```tex
+\documentclass{article}
+\begin{document}
+\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium nibh turpis. Donec nec magna neque. Pellentesque metus urna, volutpat at risus et, euismod hendrerit ex. Vestibulum semper quis metus in pretium.
+
+\iffalse
+    This is a multiline comment in LaTeX.
+    You can use \iffalse and \fi to comment out multiple lines.
+    These lines will be ignored during compilation.
+\fi
+
+\end{document}
+```
+___Use comment package___
+
+`comment` package provides a convenient way to create block comments. But, Remember to include the `\usepackage{comment}` line in preamble of your document.
+```tex
+\documentclass{article}
+\usepackage{comment}
+\begin{document}
+\noindent Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin finibus vestibulum feugiat. Phasellus a enim aliquet, cursus magna ut, bibendum tellus. Integer nibh magna, sollicitudin at dui quis, ullamcorper varius leo. \\[6pt]
+
+\begin{comment}
+    This is a block comment using the comment package.
+    You can include as many lines as you want in this block,
+    and they will be ignored during compilation.
+\end{comment}
+
+\noindent Nulla malesuada facilisis dui, quis auctor ante facilisis convallis. Ut bibendum luctus massa, a molestie arcu tempor id. Maecenas faucibus congue eros ac convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vel purus odio. 
+\end{document}
+
+```
+
 ### Abstract and Keywords
 While writing research papers it is mandatory to include the abstract and the keywords before the main section of the body. The LaTeX engine bears pre-defined commands that inform it what part of content makes up the abstract and keywords respectively. The command to include abstract and keywords in the document exist for document class like article and report, however, not available for book class of document.
 
