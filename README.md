@@ -260,6 +260,53 @@ LaTeX will automatically number the chapters, parts, sections, etc. You can use 
 \subsection*{My First Subsection Title}
 ```
 
+### Fonts in Documents
+```tex
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+ 
+\setmainfont{Times New Roman}
+\title{Sample font document}
+\author{dghuuloc}
+\date{\today}
+   
+\begin{document}
+\maketitle
+
+\setmainfont{Times New Roman}
+Sử dụng Font Times New Roman cho việc gõ tiếng Việt
+     
+This is an \textit{example} of a document compiled 
+with \textbf{LuaLaTeX}.
+
+\setmainfont{Latin Modern Sans}
+How to use latin Modern Sans Fonts
+
+\end{document}
+```
+
+```tex
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[main=vietnamese, english]{babel}
+% \usepackage[T5]{fontenc}
+% \usepackage[utf8]{vietnam}
+
+\title{Sample font document}
+\author{dghuuloc}
+\date{\today}
+   
+\begin{document}
+\maketitle
+
+Hà Nội là thủ đô, đồng thời là thành phố đứng đầu Việt Nam về diện
+tích tự nhiên và đứng thứ hai về diện tích đô thị sau thành phố Hồ Chí
+Minh.
+
+\end{document}
+```
+
 ### References
 - [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
 - [Learn LaTeX — A Beginner's Step-By-Step Guide](https://typeset.io/resources/learn-latex-beginners-step-by-step-guide/)
