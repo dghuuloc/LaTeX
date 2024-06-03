@@ -35,7 +35,8 @@ General environment structure is as following:
 The preamble in a LaTeX document is the space between the `\documentclass` and `\begin{document}` commands where you define the document class, include packages, specify properties, set page layout, and define custom commands. For example:
 
 ```tex
-\documentclass{article}
+\documentclass[12pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \newcommand{\mycommand}[1]{\textcolor{red}{#1}}
