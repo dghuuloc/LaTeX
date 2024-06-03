@@ -263,3 +263,5 @@ LaTeX will automatically number the chapters, parts, sections, etc. You can use 
 ### References
 - [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
 - [Learn LaTeX — A Beginner's Step-By-Step Guide](https://typeset.io/resources/learn-latex-beginners-step-by-step-guide/)
+- [UTF-8](https://tex.stackexchange.com/questions/507109/how-can-i-use-utf-8vietnamese-in-equation-environment)
+- [Foreign language](https://tex.stackexchange.com/questions/644783/table-captions-default-to-foreign-language)
