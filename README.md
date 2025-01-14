@@ -53,7 +53,12 @@ The preamble in a LaTeX document is the space between the `\documentclass` and `
 The body of the document should be placed between the `\begin{document}` and `\end{document}` commands, anything after the `\end{document}` command will be ignored.
 
 ```tex
-\documentclass[a4paper,12pt]{book}
+\documentclass[12pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\newcommand{\mycommand}[1]{\textcolor{red}{#1}}
+
 \begin{document}
 This is my first document in LaTeX.
 \end{document}
