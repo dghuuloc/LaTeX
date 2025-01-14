@@ -16,7 +16,8 @@ So, calling a command can look like this:
 ```tex
 \commandname[optional argument]{main argument}
 ```
-Note, that all commands must be proceeded by the backslash mark and the main argument must be included inside {..} pair.
+Note, that all commands must be proceeded by the backslash mark and the main argument must be included inside `{..}` pair.
+
 Some commands have more than one arguments, for example:
 ```tex
 \multicolumn{number of columns joined}{alignment}{content} 
