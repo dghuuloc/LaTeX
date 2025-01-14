@@ -14,8 +14,10 @@ Commands can have __parameters__, that is, options that determine in which way t
 So, calling a command can look like this:
 
 ```tex
-\command[options]{argument}
+\commandname[optional argument]{main argument}
 ```
+> [!NOTE]
+> That all commands __must__ be proceeded by the backslash mark and main argument must be included inside `{...}` pair.
 
 > [!NOTE]
 > __Commands, macros, and declarations__
