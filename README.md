@@ -6,6 +6,20 @@ A basic TeX distribution doesn't actually provide much functionality. In most ca
 
 Packages required by a document are called in the __preamble__ of your LaTeX document, i.e. before the `\begin{document}` statement. The syntax to do so is `\usepackage[options]{package_name}`, with the name of the package included in the brackets.
 
+### __Understanding `\documentclass [option] {type}`__
+A LaTeX document starts with the command `\documentclass [option] {type}`. The most common document-classes in LaTex are: ___Book___, ___Report___, ___Article___ or ___Letter___
+- An `article` does not provide `chapter`, whereas `book` and `report` do. Thus, the first structuring element of an `article` is `\section{name}`.
+- In a `book`, a header is automatically added to each page indicating the page number as well as the chapter name on even pages and the section name on odd pages
+- A `book` is always 2-sided whereas in a `report` or `article` you have to specify it by using the `twoside` option. In addition, in a `book` and `report` the `titlepage` and `abstract` will take a whole page each, which is not the case for `article`. In an `article`, you can use the options `titlepage` and `abstract`.
+
+#### __Available document structure commands:__
+- __Book:__ `\part{}`, `\chapter{}`, `\section{}`, `\subsection{}`, `\subsubsection{}`, `\paragraph{}`, `\subparagraph{}`.
+- __Report:__ `\part{}`, `\chapter{}`, `\section{}`, `\subsection{}`, `\subsubsection{}`, `\paragraph{}`, `\subparagraph{}`.
+- __Article:__ `\part{}`, `\section{}`, `\subsection{}`, `\subsubsection{}`, `\paragraph{}`, `\subparagraph{}`.
+- __Letter:__ A letter does not know the same structuring commands as other formats, but more specific commands like `\signature{}`, `\address{}`, `\opening{}` and `\closing{}`.
+
+Except `\part{}`, all structuring commands build a hierarchy. They have a standard formating and numeration.
+
 ### Understanding LaTeX Commands
 LaTeX commands begin with a backslash, followed by big or small letters, and are usually named in a descriptive way.
 
