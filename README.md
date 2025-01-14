@@ -25,13 +25,13 @@ So, calling a command can look like this:
 > Most LaTex commands, including those we define ourselves, consist of other commands. That's why LaTeX commands are also called __macros__, and the terms _macro_ and _command_ are used interchangeably. A command or macro the doesn't print something but just changes current settings, such as the font shape or text alignment, is also called a __declaration__.
 
 ### Understanding LaTeX Environments
-LaTeX environments start with `\begin` and end with `\end`. Both commands require the name of the environment as their argument.
+Environment is a special type of command. LaTeX environments start with `\begin` and end with `\end`. Both commands require the name of the environment as their argument.
 
 General environment structure is as following:
 ```tex
-\begin{name}[options]{argument}
+\begin{environmentname}[optional argument]{main argument}
   ...
-\end{name}
+\end{environmentname}
 ```
 ### The preamble of a document
 The preamble in a LaTeX document is the space between the `\documentclass` and `\begin{document}` commands where you define the document class, include packages, specify properties, set page layout, and define custom commands. For example:
