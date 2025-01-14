@@ -41,6 +41,13 @@ General environment structure is as following:
   ...
 \end{environmentname}
 ```
+Some environments take arguments and optional arguments, like commands. For example
+```tex
+\begin{tabular}[table position]{column specifications}
+ table content
+\end{tabular}
+```
+
 ### The preamble of a document
 The preamble in a LaTeX document is the space between the `\documentclass` and `\begin{document}` commands where you define the document class, include packages, specify properties, set page layout, and define custom commands. For example:
 
