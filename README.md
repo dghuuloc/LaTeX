@@ -59,9 +59,11 @@ The body of the document should be placed between the `\begin{document}` and `\e
 \usepackage{hyperref}
 \newcommand{\mycommand}[1]{\textcolor{red}{#1}}
 
+% start main body of document
 \begin{document}
 This is my first document in LaTeX.
 \end{document}
+% end main body of document
 ```
 ### Top Matter
 
